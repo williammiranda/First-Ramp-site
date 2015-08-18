@@ -1,0 +1,96 @@
+*{
+	padding: 0;
+	margin: 0; 
+	font-family: helvetica, sans-serif;
+	text-decoration: none;
+	text-align: center;
+
+	/*border: 1px solid red;*/
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 100;
+}
+p{
+	font-family: Georgia, serif;
+	font-weight: 300;
+}
+
+header {
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.45),
+		rgba(0, 0, 0, 0.45)),
+		url(../img/bg_720.png);
+		height: 80vh;
+	
+
+}
+.navbar{
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	padding: 40px;
+	z-index: 1;
+}
+.navbar>div{
+	float: right;
+	margin-right: 40px;
+}
+.logo{
+	float: left;
+}
+span>a {
+	margin-right: 20px;
+}
+.headfix{
+	position: relative;
+	top: 300px;
+}
+.mobilemenu>a>div {
+	height: 20vh;
+	background-color: black;
+	border: 1px solid white; 
+	color:white;
+	font-size: 2em;
+	z-index: 2;
+}
+
+/*@media (min-width: 960px){
+	.worktimeline{
+	height: 300px;
+	background-image: url(../img/worktimelinemobile.png);
+	
+}
+}
+/*@media (max-width: 960){
+	.worktimeline{
+	height: 600px;
+	background-image: url(../img/worktimeline.png);
+}*/
+
+/*Desktop Sized Window*/
+@media (min-width: 960px){
+.timelinevt{
+	display: none;
+}
+
+.mobilemenu{
+	display: none;
+
+}
+.mobilenav{
+	display: none;
+}
+}
+/*Mobile Sized Window*/
+@media (max-width: 960px){
+	.timelinehz{
+		display: none;
+	}
+	.deskmenu{
+		display: none;
+	}
+	.navbar{
+		padding: 5px;
+}
+}
